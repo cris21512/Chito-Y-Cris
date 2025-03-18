@@ -21,6 +21,7 @@ def index() -> rx.Component:
                 max_width=style.MAX_WIDTH,
                 width="100%",
                 margin_y=Size.BIG.value,
+                padding=Size.BIG.value,
                 spacing="6"
             ),
         ),

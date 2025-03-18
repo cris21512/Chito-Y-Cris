@@ -4,6 +4,8 @@ from Chito_Y_Cris.components.icon_link import icon_link
 from Chito_Y_Cris.components.info import info
 import Chito_Y_Cris.styles.styles as style
 import Chito_Y_Cris.constants.conts as const
+from Chito_Y_Cris.components.info_text import info_text
+from Chito_Y_Cris.styles.colors import Colors as Color
 
 def header() -> rx.Component:
     return rx.vstack(
@@ -17,8 +19,8 @@ def header() -> rx.Component:
                     "box-shadow": "#19191a",
                     "transition": "0.3s",
                     "_hover": {
-                        "box-shadow": "0 0 25px #14A1F0",
-                        "border": "3px solid #14A1F0",
+                        "box-shadow": f"0 0 25px {Color.TERCIARY.value}",
+                        "border": f"3px solid {Color.TERCIARY.value}",
                     }
                 }
                 ),
@@ -51,14 +53,15 @@ def header() -> rx.Component:
                 ),
             ),
             rx.flex(
-                info("+45k", "Seguidores"),
+                info_text("+45k ", "Seguidores"),
                 rx.spacer(),
-                info("+600k", "Likes"),
+                info_text("+600k ", "Likes"),
                 rx.spacer(),
-                info("+50", "Recetas"),
+                info_text("+50 ", "Recetas"),
                 width="100%",
-                spacing="6",
-                style=style.text_style
+                spacing="2",
+                style=style.text_style,
+                flex_direction="row",
             ),
             rx.text(
                 """ 

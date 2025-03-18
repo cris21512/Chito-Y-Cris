@@ -7,7 +7,14 @@ from Chito_Y_Cris.styles.colors import Colors, TextColor
 
 
 
-def link_button(title:str, body:str, image:str , url: str, hover_color: str) -> rx.Component:
+def link_button(
+        title:str, 
+        body:str, 
+        image:str, 
+        url: str, 
+        hover_color: str,
+        hover_box:str
+    ) -> rx.Component:
     return rx.link(
         rx.button(
             rx.hstack(
@@ -36,6 +43,7 @@ def link_button(title:str, body:str, image:str , url: str, hover_color: str) -> 
                 "width": "100%",
                 "height": "100%",
                 "display": "block",
+                "box-shadow": f"3px 3px 0px 0px {hover_box}",
                 "border": f"2px solid {hover_color}",
                 "border-radius": Size.DEFAULT.value,
                 "padding": Size.SMALL.value,
@@ -44,6 +52,8 @@ def link_button(title:str, body:str, image:str , url: str, hover_color: str) -> 
                 "_hover": {
                     "background-color": Colors.SECONDARY.value,
                     "border": "2px solid #175AF4",
+                    "box_shadow": "none",
+                    "transform": "translate(3px, 3px)"
                 }
             }
         ),

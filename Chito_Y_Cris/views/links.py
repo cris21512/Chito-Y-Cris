@@ -3,6 +3,7 @@ from Chito_Y_Cris.components.heading import heading
 from Chito_Y_Cris.components.link_button import link_button
 import Chito_Y_Cris.constants.conts as const
 import Chito_Y_Cris.styles.styles as style
+from Chito_Y_Cris.styles.colors import Colors as Color
 
 def links() -> rx.Component:
     return rx.vstack(
@@ -12,6 +13,7 @@ def links() -> rx.Component:
             "Unete a nuestro canal de WhatsApp",
             "icons/whastapp.svg",
             const.CDW,
+            "#76ee94",
             "#76ee94"
         ),
         link_button(
@@ -19,6 +21,7 @@ def links() -> rx.Component:
             "Nuestro canal principal de YouTube",
             "icons/youtube.svg",
             const.YOUTUBE,
+            "#FF0000",
             "#FF0000"
         ),
         link_button(
@@ -26,6 +29,7 @@ def links() -> rx.Component:
             "Directos de todo tipo!",
             "icons/twitch.svg",
             const.TWITCH,
+            "#9F8CE8",
             "#9F8CE8"
         ),
         link_button(
@@ -33,7 +37,8 @@ def links() -> rx.Component:
             "Directos todos los dias!",
             "icons/tiktok.svg",
             const.TIKTOK,
-            "#020202"
+            "#020202",
+            Color.WHITE.value
         ),
         heading("Recetas"),
         rx.text("""A continuación, te presentamos una lista de nuestras recetas dividas
@@ -44,21 +49,24 @@ def links() -> rx.Component:
             "Asado a nuestro estilo",
             "icons/meat.png",
             const.ASADO,
-            "#020202"
+            "#020202",
+            Color.WHITE.value
         ),
         link_button(
             "Tacos de Birria",
             "Especial 20k de seguidores!",
             "icons/meat.png",
             const.BIRRIA,
-            "#020202"
+            "#020202",
+            Color.WHITE.value
         ),
         link_button(
             "Hamburguesas",
             "Hamburguesas repletas de sabor",
             "icons/meat.png",
             const.BURGUERS,
-            "#020202"
+            "#020202",
+            Color.WHITE.value
         ),
         heading("Pollo"),
         link_button(
@@ -66,21 +74,24 @@ def links() -> rx.Component:
             "Un platillo guatemalteco muy sabroso",
             "icons/chicken.png",
             const.PEPIAN,
-            "#020202"
+            "#020202",
+            Color.WHITE.value
         ),
         link_button(
             "Arroz chino",
             "El arroz chino mas delicioso que probaras",
             "icons/chicken.png",
             const.ARROZCHINO,
-            "#020202"
+            "#020202",
+            Color.WHITE.value
         ),
         link_button(
             "Chaomin",
             "Nuestra forma sencilla de preparar chaomin",
             "icons/chicken.png",
             const.CHAOMEIN,
-            "#020202"
+            "#020202",
+            Color.WHITE.value
         ),
         heading("Cerdo"),
         link_button(
@@ -88,21 +99,24 @@ def links() -> rx.Component:
             "Carnitas a nuestro estilo!",
             "icons/pig.png",
             const.CARNITAS,
-            "#020202"
+            "#020202",
+            Color.WHITE.value
         ),
         link_button(
             "Pupusas",
             "De todo tipo! Chicharron o queso?",
             "icons/pig.png",
             const.PUPUSAS,
-            "#020202"
+            "#020202",
+            Color.WHITE.value
         ),
         link_button(
             "Chicharron colorado",
             "Un estilo parecido al frijol colorado",
             "icons/pig.png",
             const.CHICHACOLORAO,
-            "#020202"
+            "#020202",
+            Color.WHITE.value
         ),
         heading("Mariscos"),
         link_button(
@@ -110,21 +124,24 @@ def links() -> rx.Component:
             "Ceviche Guatemalteco muy delicioso!",
             "icons/camaron.png",
             const.CEVICHE,
-            "#020202"
+            "#020202",
+            Color.WHITE.value
         ),
         link_button(
             "Aguachile",
             "Seraz capaz de aguantar el picante?",
             "icons/camaron.png",
             const.AGUACHILE,
-            "#020202"
+            "#020202",
+            Color.WHITE.value
         ),
         link_button(
             "Mojarras",
             "Una mojarra frita nunca queda mal!",
             "icons/camaron.png",
             const.MOJARRA,
-            "#020202"
+            "#020202",
+            Color.WHITE.value
         ),
         heading("No encuentras lo que buscas?"),
         rx.text("Hechale un vistazo a nuestro tiktok para encontrar mas recetas!", style=style.text_style),
@@ -133,7 +150,8 @@ def links() -> rx.Component:
             "Encuentra todos nuestros videos aqui!",
             "icons/tiktok.svg",
             const.TIKTOK,
-            "#020202"
+            "#020202",
+            Color.WHITE.value
         ),
         width="100%",    
         spacing="4"

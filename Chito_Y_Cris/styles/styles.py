@@ -34,8 +34,7 @@ STYLESHEETS = [
 
 
 BASE_STYLE = {
-    "background": "#19191a",
-#
+    "background-color": Colors.OSCURO.value,
     rx.link:{
         "text_decoration": "none",
         "_hover":{}

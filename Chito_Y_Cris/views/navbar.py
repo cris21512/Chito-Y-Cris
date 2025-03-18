@@ -11,7 +11,7 @@ def navbar() -> rx.Component:
                 rx.text.strong("Chito ", style=style.title_style),"y", rx.text.strong(" Cris", style=style.title_style),
             )
         ),
-        positions="sticky",
+        position="sticky",
         bg=Color.BLACK.value,
         padding_x=Size.BIG.value,
         padding_y=Size.SMALL.value,
