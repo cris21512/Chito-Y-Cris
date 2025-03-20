@@ -27,7 +27,6 @@ def index() -> rx.Component:
         ),
     )
 
-
 app = rx.App(
     style=BASE_STYLE,
     stylesheets=style.STYLESHEETS
@@ -35,7 +34,6 @@ app = rx.App(
 app.add_page(
     index,
     image="/logo.jpg",
-    description="La web de Chito y Cris remasterizada y mejor optimizada, con un diseño más limpio y moderno.",
+    description="La web de Chito y Cris, con estilo minimalista y moderno.",
     title="Chito y Cris",
-    
     )

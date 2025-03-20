@@ -26,7 +26,7 @@ def header() -> rx.Component:
                 ),
                 rx.vstack(
                 heading("Chito y Cris"),
-                rx.text.strong("@chito2.1.2"),
+                rx.text("@chito2.1.2", style=style.text_style),
                 rx.hstack(
                     icon_link(
                         "icons/tiktok.svg",
@@ -64,7 +64,7 @@ def header() -> rx.Component:
                 flex_direction="row",
             ),
             rx.text(
-                """ 
+                """
                 ¡Bienvenidos a la página oficial de Chito y Cris! En este espacio encontrarás un poco de nuestro contenido...
                 El contenido estará dividido en varias secciones para que encuentres fácilmente lo que buscas.
                 Si tienes alguna duda o sugerencia, no dudes en contactarnos a través de nuestras redes sociales. ¡Estamos aquí para ayudarte!

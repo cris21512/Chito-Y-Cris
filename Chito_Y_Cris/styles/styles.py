@@ -1,6 +1,7 @@
 from enum import Enum
 import reflex as rx 
 from Chito_Y_Cris.styles.colors import Colors, TextColor
+import random
 
 
 #MAX WIDTHS
@@ -34,6 +35,8 @@ STYLESHEETS = [
 
 
 BASE_STYLE = {
+    "background-image": "radial-gradient(circle, rgba(102,204,255,0.1) 2px, transparent 2px)",
+    "background-size": "30px 30px",
     "background-color": Colors.OSCURO.value,
     rx.link:{
         "text_decoration": "none",
