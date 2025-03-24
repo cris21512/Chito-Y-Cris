@@ -10,12 +10,12 @@ def sponsors() -> rx.Component:
         heading("Con el apoyo de:"),
         rx.flex(
             link_sponsor(
-                "/logoM.png",
+                "/logoM.svg",
                 conts.GITHUB,
-                "Logotipo de Master"
+                "Logo de Master"
             ),
             link_sponsor(
-                "/logoCC.png",
+                "/logoCC.svg",
                 conts.TIKTOK,
                 "Logotipo de ChitoyCris"
             ),
