@@ -5,8 +5,8 @@ def icon_link(image: str, url: str) -> rx.Component:
     return rx.link(
         rx.image(
             src=image,
-            width="25px",
-            height="25px",
+            width="30px",
+            height="30px",
             style={
                 "transition": "0.3s",
                 "_hover": {

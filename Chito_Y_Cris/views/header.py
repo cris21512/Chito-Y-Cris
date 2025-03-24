@@ -1,7 +1,6 @@
 import reflex as rx
 from Chito_Y_Cris.components.heading import heading
 from Chito_Y_Cris.components.icon_link import icon_link
-from Chito_Y_Cris.components.info import info
 import Chito_Y_Cris.styles.styles as style
 import Chito_Y_Cris.constants.conts as const
 from Chito_Y_Cris.components.info_text import info_text
@@ -12,15 +11,15 @@ def header() -> rx.Component:
         rx.hstack(
             rx.avatar(
                 src="/avatar.jpg",
-                radius="full",
+                radius="medium",
                 size="8",
                 style={
-                    "border": "3px solid #393d42",
-                    "box-shadow": "#19191a",
-                    "transition": "0.3s",
+                    "border": f"2px solid {Color.BLACK.value}",
+                    "box-shadow": f"3px 3px 0px 0px {Color.WHITE.value}",
+                    "transition": "0.2s",
                     "_hover": {
-                        "box-shadow": f"0 0 25px {Color.TERCIARY.value}",
-                        "border": f"3px solid {Color.TERCIARY.value}",
+                        "box-shadow": f"6px 6px 0px 0px {Color.WHITE.value}",
+                        "transform": "translate(-3px, -3px)"
                     }
                 }
                 ),

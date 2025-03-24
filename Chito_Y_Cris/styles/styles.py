@@ -35,7 +35,7 @@ STYLESHEETS = [
 
 
 BASE_STYLE = {
-    "background-image": "radial-gradient(circle, rgba(102,204,255,0.1) 2px, transparent 2px)",
+    "background-image": "radial-gradient(circle, rgba(102,204,255,0.2) 2px, transparent 2px)",
     "background-size": "30px 30px",
     "background-color": Colors.OSCURO.value,
     rx.link:{

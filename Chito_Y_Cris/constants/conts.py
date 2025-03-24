@@ -65,3 +65,7 @@ MOJARRA = "https://www.tiktok.com/@chito2.1.2/video/7275406354280353030"
 #IMAGES
 
 FAVICON = "https://drive.google.com/file/d/1BMpexEgAcGJpG_oj_91sUp6huDDxtYTB/view?usp=sharing"
+# SPONSORS
+
+LOGOM = "/logoM.svg"
+LOGOCC = "/logoCC.svg"
